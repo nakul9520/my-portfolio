@@ -57,4 +57,6 @@ export interface PersonalInfo {
   };
   yearsExperience: string;
   bio: string[];
+  /** Google Drive (or any external) direct-download URL for resume PDF */
+  resumeUrl: string;
 }
