@@ -10,7 +10,7 @@
 
 Personal portfolio website showcasing my projects, experience, and skills — with a built-in **Gemini AI assistant** that answers questions about me in real time.
 
-🔗 **Live Site:** _coming soon_
+🔗 **Live Site:** [nakul-yadav-portfolio.vercel.app](https://nakul-yadav-portfolio.vercel.app)
 
 ---
 

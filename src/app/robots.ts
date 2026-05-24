@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { absoluteUrl, siteConfig } from '@/config/site';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://nakulyadav.dev/sitemap.xml',
-    host: 'https://nakulyadav.dev',
+    sitemap: absoluteUrl('/sitemap.xml'),
+    host: siteConfig.url,
   };
 }
