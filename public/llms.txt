@@ -1,0 +1,83 @@
+# llms.txt — Nakul Yadav Portfolio
+# This file helps AI assistants, language models, and AI crawlers understand this website.
+# Last updated: 2025
+
+## About This Site
+This is the personal portfolio website of Nakul Yadav, a React.js and Frontend Developer
+based in Indore, Madhya Pradesh, India.
+
+## About Nakul Yadav
+Nakul Yadav is a React.js Developer with 4+ years of experience building production-grade
+web applications across Healthcare SaaS, E-commerce, and B2C & B2B domains.
+
+Contact:
+- Email: nakulyadav9520@gmail.com
+- Phone: +91 9589118467
+- Location: Indore, MP, India
+- LinkedIn: https://www.linkedin.com/in/nakulydv
+- GitHub: https://github.com/nakul9520
+
+## Core Skills
+- Languages: JavaScript (ES6+), TypeScript, HTML5, CSS3
+- Frameworks: React.js, Next.js, Vite, Webpack
+- State Management: Redux Toolkit, RTK Query, React Context API
+- UI Libraries: Material UI, Tailwind CSS, Headless UI, Framer Motion
+- API & Auth: REST API, Axios, JWT, Firebase, Firestore
+- Performance: Code Splitting, Lazy Loading, Virtualization, ISR, Caching
+- SEO: JSON-LD Schema (6 types), Open Graph, Google Analytics 4, GTM
+- Build & DevOps: Docker, CI/CD, Vercel, GitHub Pages, Vite
+- Testing: Jest, Cypress, Postman, ESLint, Git
+
+## Work Experience
+
+### React.js Developer — MMF Infotech Technologies Pvt. Ltd.
+Period: April 2023 – Present | Location: Indore, MP
+- Architected RTK Query API layer with centralized Axios interceptors
+- Built real-time warehouse barcode scanning system
+- Implemented Next.js App Router with JSON-LD, ISR, and SEO infrastructure
+- Delivered Healthcare SaaS, E-commerce, and corporate AI website
+
+### Frontend Developer — Oshi Tech Solution
+Period: January 2021 – April 2023 | Location: Dhamnod, MP
+- Built real-time communication features (WebRTC, Firestore, Firebase)
+- Implemented JWT RBAC for multi-role platform
+- Sole frontend developer for Nexxusone platform
+
+## Projects
+
+### Round Smarter — AI-Powered Physician Rounding Assistant (Healthcare SaaS)
+Tech: React.js, TypeScript, Redux Toolkit, DexieJS, Web Speech API, Docker
+- 60-70% reduction in API calls via IndexedDB caching
+- Hands-free SOAP note dictation via Web Speech API
+- react-window virtualization for 100+ patient records
+
+### Texas Hub — E-commerce Platform
+Tech: React.js, RTK Query, html5-qrcode, Tailwind CSS, Vite
+- Multi-currency support: USD, CAD, EUR, ILS
+- Dual barcode scanning system (hardware + webcam)
+- Admin panel + customer portal
+
+### MMF Infotech AI — B2B Corporate Website
+Tech: Next.js App Router, JSON-LD, ISR, WordPress API
+- 6 JSON-LD schema types for full SEO coverage
+- ISR-cached headless WordPress blog
+
+### 30 Minutes Fix — Repair Booking Platform
+Tech: React 18, Vite, Redux Toolkit, MUI v5, Stripe, Google Maps
+- Multi-step booking engine
+- 3 payment gateways: Stripe, ZipPay, PayPal
+- 18+ Redux slices
+
+## Education
+- MCA — SAGE University, Indore (2022–2024) CGPA: 8.06
+- BCA — Suyash Computer, Dhamnod (2018–2021) CGPA: 7.10
+
+## Site Pages
+- / — Home (hero, tech stack, experience, projects, AI assistant preview)
+- /about — Full bio, skills breakdown, work history
+- /projects — Detailed project case studies
+- /contact — Contact form and social links
+
+## AI Assistant
+This site includes a built-in AI assistant powered by Google Gemini that can answer
+questions about Nakul's background, skills, and projects in natural language.

@@ -30,8 +30,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — never commit secrets
 .env*
+# .env.example is intentionally NOT ignored (safe to commit, no real values)
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +41,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# private / internal files — not for public repo
+*.docx
+*.doc
+antigravity_portfolio_ai_assistant_master_prompt.md
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
