@@ -58,7 +58,9 @@ src/
 │   ├── contact/
 │   │   ├── page.tsx          ← Contact page
 │   │   └── ContactForm.tsx   ← Contact form component
-│   ├── projects/page.tsx     ← Projects page
+│   ├── projects/
+│   │   ├── page.tsx          ← Projects list page
+│   │   └── [id]/page.tsx     ← Dynamic project case study dynamic route
 │   ├── api/ai-chat/route.ts  ← Gemini AI API route (POST)
 │   ├── robots.ts             ← SEO robots config
 │   └── sitemap.ts            ← Dynamic sitemap
@@ -79,7 +81,8 @@ src/
 │   │   └── CTASection.tsx
 │   └── ui/
 │       ├── Badge.tsx         ← Reusable badge component
-│       └── Button.tsx        ← Reusable button component
+│       ├── Button.tsx        ← Reusable button component
+│       └── ProjectSlider.tsx ← Interactive image/video slider component
 │
 ├── config/
 │   └── site.ts               ← ⭐ CENTRAL CONFIG — url, name, description, routes, GA ID
@@ -161,7 +164,7 @@ hotfix/*    ← Critical fixes → main + dev
 All content is in `src/data/`. To update:
 
 - **Personal info / bio:** `personal.ts`
-- **Projects:** `projects.ts`
+- **Projects:** `projects.ts` (list metadata) & `projects/[id].md` (individual markdown files)
 - **Work experience:** `experience.ts`
 - **Skills:** `skills.ts`
 - **AI knowledge base:** `ai-context.ts` ← update this too when content changes
@@ -175,6 +178,7 @@ All content is in `src/data/`. To update:
 | `/`            | `app/page.tsx`             | ✅ Done |
 | `/about`       | `app/about/page.tsx`       | ✅ Done |
 | `/projects`    | `app/projects/page.tsx`    | ✅ Done |
+| `/projects/[id]`| `app/projects/[id]/page.tsx`| ⏳ Configured (Waiting for markdown content files) |
 | `/contact`     | `app/contact/page.tsx`     | ✅ Done |
 | `/api/ai-chat` | `app/api/ai-chat/route.ts` | ✅ Done |
 

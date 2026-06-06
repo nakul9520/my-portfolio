@@ -11,6 +11,13 @@ export interface SkillGroup {
   skills: string[];
 }
 
+export interface ProjectGalleryItem {
+  type: 'image' | 'video';
+  url: string;
+  caption?: string;
+  thumbnail?: string; // Poster image for video entries
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -23,6 +30,10 @@ export interface Project {
   highlights: string[];
   featured: boolean;
   order: number;
+  category: string;
+  role: string;
+  duration: string;
+  gallery?: ProjectGalleryItem[];
   links?: {
     live?: string;
     github?: string;

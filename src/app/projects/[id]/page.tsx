@@ -35,7 +35,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <svg
             width="16"
             height="16"
-            viewBox="0 0 16 16"
+            viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -166,7 +166,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     <svg
                       width="16"
                       height="16"
-                      viewBox="0 0 16 16"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
