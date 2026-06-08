@@ -136,26 +136,26 @@ export const projects: Project[] = [
     gallery: [
       {
         type: "video",
-        url: "/projects/mmf-ai/home-page.mp4",
-        thumbnail: "/projects/mmf-ai/home-page.png",
+        url: "https://res.cloudinary.com/df2wabyza/video/upload/v1780915113/home-page_nrjs09.mp4",
+        thumbnail: "/projects/mmf-ai/home-page.webp",
         caption:
           "Home page — animated hero, services overview & lead generation",
       },
       {
         type: "video",
-        url: "/projects/mmf-ai/service-pages.mp4",
-        thumbnail: "/projects/mmf-ai/home-page.png",
+        url: "https://res.cloudinary.com/df2wabyza/video/upload/v1780915143/service-pages_hgeijs.mp4",
+        thumbnail: "/projects/mmf-ai/home-page.webp",
         caption:
           "Multi-level dynamic service pages with GSAP scroll animations",
       },
       {
         type: "image",
-        url: "/projects/mmf-ai/home-page.png",
+        url: "/projects/mmf-ai/home-page.webp",
         caption: "MMF Infotech AI — Home page",
       },
       {
         type: "image",
-        url: "/projects/mmf-ai/get-quote.png",
+        url: "/projects/mmf-ai/get-quote.webp",
         caption:
           "Get Quote form — lead generation with React Hook Form & Yup validation",
       },
@@ -245,35 +245,35 @@ export const projects: Project[] = [
     gallery: [
       {
         type: "video",
-        url: "/projects/zixisoft/zixisoft-home-page.mp4",
-        thumbnail: "/projects/zixisoft/home-thumb.png",
+        url: "https://res.cloudinary.com/df2wabyza/video/upload/v1780915450/zixisoft-home-page_ousxuk.mp4",
+        thumbnail: "/projects/zixisoft/home-thumb.webp",
         caption: "Home page overview with animated hero section",
       },
       {
         type: "video",
-        url: "/projects/zixisoft/hire-team-page.mp4",
-        thumbnail: "/projects/zixisoft/hire-team-thumb.png",
+        url: "https://res.cloudinary.com/df2wabyza/video/upload/v1780915468/hire-team-page_tgnsih.mp4",
+        thumbnail: "/projects/zixisoft/hire-team-thumb.webp",
         caption: "Hire Team page — agency job listings & creation flow",
       },
       {
         type: "video",
-        url: "/projects/zixisoft/for-developer-page.mp4",
-        thumbnail: "/projects/zixisoft/home-thumb.png",
+        url: "https://res.cloudinary.com/df2wabyza/video/upload/v1780915444/for-developer-page_u2sfcd.mp4",
+        thumbnail: "/projects/zixisoft/home-thumb.webp",
         caption: "For Developer page — job opportunities & developer flow",
       },
       {
         type: "image",
-        url: "/projects/zixisoft/agency-register.png",
+        url: "/projects/zixisoft/agency-register.webp",
         caption: "Agency registration form with custom validation",
       },
       {
         type: "image",
-        url: "/projects/zixisoft/developer-register.png",
+        url: "/projects/zixisoft/developer-register.webp",
         caption: "Developer registration form with custom validation",
       },
       {
         type: "image",
-        url: "/projects/zixisoft/login.png",
+        url: "/projects/zixisoft/login.webp",
         caption: "Login page — clean and minimal auth interface",
       },
     ],
@@ -328,105 +328,105 @@ export const projects: Project[] = [
       // — Super Admin —
       {
         type: "image",
-        url: "/projects/nexxusone/super-admin/Login.png",
+        url: "/projects/nexxusone/super-admin/Login.webp",
         caption: "Super Admin — Login",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/super-admin/agency-list.png",
+        url: "/projects/nexxusone/super-admin/agency-list.webp",
         caption: "Super Admin — Agency List",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/super-admin/Live.png",
+        url: "/projects/nexxusone/super-admin/Live.webp",
         caption: "Super Admin — Live Operations View",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/super-admin/Workspace Created.png",
+        url: "/projects/nexxusone/super-admin/Workspace Created.webp",
         caption: "Super Admin — Workspace Created",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/super-admin/Guidelines.png",
+        url: "/projects/nexxusone/super-admin/Guidelines.webp",
         caption: "Super Admin — Guidelines Management",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/super-admin/Support.png",
+        url: "/projects/nexxusone/super-admin/Support.webp",
         caption: "Super Admin — Support Panel",
       },
       // — Officer —
       {
         type: "image",
-        url: "/projects/nexxusone/officer/Dashboard.png",
+        url: "/projects/nexxusone/officer/Dashboard.webp",
         caption: "Officer — Dashboard",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/officer/Officer's Profile.png",
+        url: "/projects/nexxusone/officer/Officer's Profile.webp",
         caption: "Officer — Profile View",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/officer/Inbox officer.png",
+        url: "/projects/nexxusone/officer/Inbox officer.webp",
         caption: "Officer — Inbox (Officer View)",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/officer/Inbox civillian.png",
-        caption: "Officer — Inbox (Civilian Messages)",
+        url: "/projects/nexxusone/officer/video-call.webp",
+        caption: "Officer — Video Call",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/officer/Inbox files.png",
+        url: "/projects/nexxusone/officer/Inbox files.webp",
         caption: "Officer — Inbox Files",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/officer/File missing.png",
+        url: "/projects/nexxusone/officer/File missing.webp",
         caption: "Officer — Missing File Report",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/officer/schedule.png",
+        url: "/projects/nexxusone/officer/schedule.webp",
         caption: "Officer — Schedule View",
       },
       // — Agency —
       {
         type: "image",
-        url: "/projects/nexxusone/agency/Chat Queue-1.png",
+        url: "/projects/nexxusone/agency/Chat Queue-1.webp",
         caption: "Agency — Chat Queue (Active)",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/agency/Chat Queue.png",
+        url: "/projects/nexxusone/agency/Chat Queue.webp",
         caption: "Agency — Chat Queue Overview",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/agency/Officers.png",
+        url: "/projects/nexxusone/agency/Officers.webp",
         caption: "Agency — Officers Management",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/agency/Push Notification.png",
+        url: "/projects/nexxusone/agency/Push Notification.webp",
         caption: "Agency — Push Notification Panel",
       },
       // — Dispatcher —
       {
         type: "image",
-        url: "/projects/nexxusone/dispatcher/Main.png",
+        url: "/projects/nexxusone/dispatcher/Main.webp",
         caption: "Dispatcher — Main Dashboard",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/dispatcher/Live.png",
+        url: "/projects/nexxusone/dispatcher/Live.webp",
         caption: "Dispatcher — Live Operations Map",
       },
       {
         type: "image",
-        url: "/projects/nexxusone/dispatcher/Workspace Received.png",
+        url: "/projects/nexxusone/dispatcher/Workspace Received.webp",
         caption: "Dispatcher — Workspace Received",
       },
     ],
