@@ -133,6 +133,33 @@ export const projects: Project[] = [
     category: "B2B AI Services",
     role: "Next.js & Frontend Developer",
     duration: "April 2023 - Present",
+    gallery: [
+      {
+        type: "video",
+        url: "/projects/mmf-ai/home-page.mp4",
+        thumbnail: "/projects/mmf-ai/home-page.png",
+        caption:
+          "Home page — animated hero, services overview & lead generation",
+      },
+      {
+        type: "video",
+        url: "/projects/mmf-ai/service-pages.mp4",
+        thumbnail: "/projects/mmf-ai/home-page.png",
+        caption:
+          "Multi-level dynamic service pages with GSAP scroll animations",
+      },
+      {
+        type: "image",
+        url: "/projects/mmf-ai/home-page.png",
+        caption: "MMF Infotech AI — Home page",
+      },
+      {
+        type: "image",
+        url: "/projects/mmf-ai/get-quote.png",
+        caption:
+          "Get Quote form — lead generation with React Hook Form & Yup validation",
+      },
+    ],
     links: {
       live: "https://mmfinfotech.ai",
     },
@@ -175,13 +202,6 @@ export const projects: Project[] = [
     category: "Repair Booking & E-Commerce SaaS",
     role: "Lead Frontend Developer",
     duration: "April 2024 - Present",
-    gallery: [
-      {
-        type: "image",
-        url: "/images/projects/30-minutes-fix-dashboard.png",
-        caption: "Dynamic main dashboard view",
-      },
-    ],
     links: {
       live: "https://30minutesfix.com",
     },
