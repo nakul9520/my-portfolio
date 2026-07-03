@@ -125,7 +125,7 @@ export default function ProjectsPage() {
                     <h3 className="heading-sm" style={{ marginBottom: '0.75rem' }}>Tech Stack</h3>
                     <div className="project-tech-list" style={{ marginBottom: 'auto' }}>
                       {project.techStack.slice(0, 6).map((tech) => (
-                        <Badge key={tech} variant="neutral">{tech}</Badge>
+                        <Badge key={tech} variant="neutral" color="#8b5cf6">{tech}</Badge>
                       ))}
                       {project.techStack.length > 6 && (
                         <span className="text-xs font-semibold text-zinc-500 self-center">

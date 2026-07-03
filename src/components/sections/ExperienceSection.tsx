@@ -127,7 +127,7 @@ function ExperienceCard({ exp, index, inView }: ExperienceCardProps) {
           {/* Tech stack */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.375rem' }}>
             {exp.techStack.map((tech) => (
-              <Badge key={tech} variant="neutral">{tech}</Badge>
+              <Badge key={tech} variant="neutral" color="#8b5cf6">{tech}</Badge>
             ))}
           </div>
         </div>
