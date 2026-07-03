@@ -89,7 +89,7 @@ export function ProjectsSection() {
                     {/* Tech stack */}
                     <div className="project-tech-list" style={{ marginBottom: '1.25rem' }}>
                       {project.techStack.slice(0, 5).map((tech) => (
-                        <Badge key={tech} variant="neutral">{tech}</Badge>
+                        <Badge key={tech} variant="neutral" color="#8b5cf6">{tech}</Badge>
                       ))}
                       {project.techStack.length > 5 && (
                         <Badge variant="neutral">+{project.techStack.length - 5} more</Badge>
