@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 /** Destination inbox — set CONTACT_TO_EMAIL in your env vars */
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? '';
 
@@ -83,6 +81,9 @@ export async function POST(req: NextRequest) {
   }
 
   // ── 5. Send email via Resend ───────────────────────────────────────────────
+  // Instantiate here (not at module level) so the build succeeds without env vars
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
   const { error } = await resend.emails.send({
     from:    'Portfolio Contact <onboarding@resend.dev>',
     to:      [TO_EMAIL],
