@@ -18,7 +18,8 @@ export function ContactForm() {
     subject: '',
     message: '',
   });
-  const [status, setStatus] = useState<FormStatus>('idle');
+  const [status, setStatus]   = useState<FormStatus>('idle');
+  const [errMsg, setErrMsg]   = useState('');
 
   const handleChange = useCallback((
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -29,12 +30,31 @@ export function ContactForm() {
   const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('submitting');
-    // Placeholder — connect to Resend/EmailJS when ready
-    await new Promise((res) => setTimeout(res, 1500));
-    setStatus('success');
-    setForm({ name: '', email: '', subject: '', message: '' });
-  }, []);
+    setErrMsg('');
 
+    try {
+      const res = await fetch('/api/contact', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        // `website` is the honeypot field — real users leave it blank
+        body:    JSON.stringify({ ...form }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error ?? 'Something went wrong. Please try again.');
+      }
+
+      setStatus('success');
+      setForm({ name: '', email: '', subject: '', message: '' });
+    } catch (err) {
+      setStatus('error');
+      setErrMsg(err instanceof Error ? err.message : 'Something went wrong.');
+    }
+  }, [form]);
+
+  /* ── Success screen ─────────────────────────────────────────────────────── */
   if (status === 'success') {
     return (
       <div
@@ -77,6 +97,7 @@ export function ContactForm() {
     );
   }
 
+  /* ── Form ───────────────────────────────────────────────────────────────── */
   return (
     <form
       className="contact-form"
@@ -84,6 +105,17 @@ export function ContactForm() {
       noValidate
       aria-label="Contact form"
     >
+      {/* Honeypot — invisible to real users, auto-filled by bots */}
+      <input
+        type="text"
+        name="website"
+        aria-hidden="true"
+        tabIndex={-1}
+        autoComplete="off"
+        style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, width: 0 }}
+        defaultValue=""
+      />
+
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 14rem), 1fr))', gap: '1.25rem', marginBottom: '1.25rem' }}>
         <div className="form-field">
           <label htmlFor="contact-name" className="form-label">Full name</label>
@@ -105,7 +137,35 @@ export function ContactForm() {
         <textarea id="contact-message" name="message" className="input textarea" placeholder="Tell me about your project, role, or just say hi..." value={form.message} onChange={handleChange} required rows={5} />
       </div>
 
-      <button type="submit" className="btn btn-filled btn-lg" disabled={status === 'submitting'} style={{ width: '100%' }}>
+      {/* Error banner */}
+      {status === 'error' && (
+        <div
+          role="alert"
+          aria-live="assertive"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.625rem',
+            padding: '0.75rem 1rem',
+            marginBottom: '1.25rem',
+            borderRadius: 'var(--radius-md)',
+            background: 'hsl(0 72% 50% / 0.08)',
+            border: '1px solid hsl(0 72% 50% / 0.25)',
+            color: 'hsl(0 72% 65%)',
+            fontSize: '0.875rem',
+          }}
+        >
+          <span aria-hidden="true" style={{ flexShrink: 0 }}>✕</span>
+          <span>{errMsg}</span>
+        </div>
+      )}
+
+      <button
+        type="submit"
+        className="btn btn-filled btn-lg"
+        disabled={status === 'submitting'}
+        style={{ width: '100%' }}
+      >
         {status === 'submitting' ? (
           <>
             <svg className="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
