@@ -116,6 +116,8 @@ src/
 | ---------------- | --------------------------------------------------- | ---------------- |
 | `GEMINI_API_KEY` | `src/lib/gemini.ts`, `src/app/api/ai-chat/route.ts` | Google Gemini AI |
 | `NEXT_PUBLIC_GA_ID` | `src/config/site.ts` | Google Analytics 4 Measurement ID |
+| `RESEND_API_KEY` | `src/app/api/contact/route.ts` | Resend email API key for contact form |
+| `CONTACT_TO_EMAIL` | `src/app/api/contact/route.ts` | Destination inbox for contact form submissions |
 
 - Local: `.env.local` (gitignored — never commit)
 - Production: Set in Vercel dashboard
